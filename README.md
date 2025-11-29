@@ -28,24 +28,28 @@
 ## ✨ Features
 
 ### 🔐 Authentication & Security
+
 - 🔒 **JWT-based Authentication** - Secure token-based user sessions
 - 🛡️ **Password Encryption** - BCrypt hashing for secure password storage
 - 🍪 **HTTP-only Cookies** - Protected authentication cookies
 - 🔑 **Role-based Access Control** - Different permissions for users and admins
 
 ### 👤 User Management
+
 - 📝 User registration and login
 - 👨‍⚕️ Patient profile management
 - 📊 Health records tracking
 - 🔔 Real-time notifications with React Hot Toast
 
 ### 💊 Healthcare Features
+
 - 📋 Medical appointment scheduling
 - 📁 Health records management
 - 💉 Prescription tracking
 - 📈 Health analytics and reports
 
 ### 🎨 Modern UI/UX
+
 - ⚡ Lightning-fast with Vite
 - 🎨 Beautiful responsive design with Tailwind CSS
 - 🌙 Clean and intuitive interface
@@ -56,6 +60,7 @@
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 ```javascript
 {
   "framework": "React 19.1.1",
@@ -69,6 +74,7 @@
 ```
 
 ### Backend
+
 ```javascript
 {
   "runtime": "Node.js 3.1.10",
@@ -93,20 +99,23 @@
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
-   git clone https://github.com/Karthikeyan-BE/Health_Management.git
+   git clone https://github.com/Jenilson-BE/Health_Management.git
    cd Health_Management
    ```
 
 2. **Install dependencies**
 
    **Backend Setup:**
+
    ```bash
    cd server
    npm install
    ```
 
    **Frontend Setup:**
+
    ```bash
    cd ../frontend
    npm install
@@ -115,6 +124,7 @@
 3. **Environment Variables**
 
    Create a `.env` file in the `server` directory:
+
    ```env
    PORT=5000
    MONGODB_URI=your_mongodb_connection_string
@@ -125,12 +135,14 @@
 4. **Start the Application**
 
    **Backend (Terminal 1):**
+
    ```bash
    cd server
    npm run dev
    ```
 
    **Frontend (Terminal 2):**
+
    ```bash
    cd frontend
    npm run dev
@@ -177,46 +189,51 @@ Health_Management/
 ## 🔌 API Endpoints
 
 ### Authentication
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/auth/register` | Register new user |
-| POST | `/api/auth/login` | User login |
-| POST | `/api/auth/logout` | User logout |
-| GET | `/api/auth/profile` | Get user profile |
+
+| Method | Endpoint             | Description       |
+| ------ | -------------------- | ----------------- |
+| POST   | `/api/auth/register` | Register new user |
+| POST   | `/api/auth/login`    | User login        |
+| POST   | `/api/auth/logout`   | User logout       |
+| GET    | `/api/auth/profile`  | Get user profile  |
 
 ### Health Records
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/records` | Get all records |
-| POST | `/api/records` | Create new record |
-| GET | `/api/records/:id` | Get specific record |
-| PUT | `/api/records/:id` | Update record |
-| DELETE | `/api/records/:id` | Delete record |
+
+| Method | Endpoint           | Description         |
+| ------ | ------------------ | ------------------- |
+| GET    | `/api/records`     | Get all records     |
+| POST   | `/api/records`     | Create new record   |
+| GET    | `/api/records/:id` | Get specific record |
+| PUT    | `/api/records/:id` | Update record       |
+| DELETE | `/api/records/:id` | Delete record       |
 
 ### Appointments
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/appointments` | Get all appointments |
-| POST | `/api/appointments` | Schedule appointment |
-| PUT | `/api/appointments/:id` | Update appointment |
-| DELETE | `/api/appointments/:id` | Cancel appointment |
+
+| Method | Endpoint                | Description          |
+| ------ | ----------------------- | -------------------- |
+| GET    | `/api/appointments`     | Get all appointments |
+| POST   | `/api/appointments`     | Schedule appointment |
+| PUT    | `/api/appointments/:id` | Update appointment   |
+| DELETE | `/api/appointments/:id` | Cancel appointment   |
 
 ---
 
 ## 🎯 Key Features Implementation
 
 ### State Management with Zustand
+
 ```javascript
 // Lightweight, fast, and scalable state management
-import { create } from 'zustand'
+import { create } from "zustand";
 
 const useStore = create((set) => ({
   user: null,
   setUser: (user) => set({ user }),
-}))
+}));
 ```
 
 ### Secure Authentication Flow
+
 ```javascript
 // JWT token stored in HTTP-only cookies
 // Protected routes with middleware
@@ -224,6 +241,7 @@ const useStore = create((set) => ({
 ```
 
 ### Modern Styling with Tailwind CSS
+
 ```javascript
 // Utility-first CSS framework
 // Custom design system
@@ -238,6 +256,7 @@ const useStore = create((set) => ({
 ### Available Scripts
 
 **Frontend:**
+
 ```bash
 npm run dev        # Start development server
 npm run build      # Build for production
@@ -246,6 +265,7 @@ npm run lint       # Run ESLint
 ```
 
 **Backend:**
+
 ```bash
 npm run dev        # Start with nodemon
 npm start          # Start production server
@@ -273,8 +293,9 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Karthikeyan-BE**
-- GitHub: [@Karthikeyan-BE](https://github.com/Karthikeyan-BE)
+**Jenilson-BE**
+
+- GitHub: [@Jenilson-BE](https://github.com/Jenilson-BE)
 
 ---
 
@@ -292,6 +313,6 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 
 ### ⭐ Star this repository if you find it helpful!
 
-**Made with ❤️ by Karthikeyan-BE**
+**Made with ❤️ by Jenilson-BE**
 
 </div>
